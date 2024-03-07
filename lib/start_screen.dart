@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -10,8 +11,11 @@ class StartScreen extends StatelessWidget{
     return  Center(
         child: Column(
             children: [
-      Image.asset('assets/images/quiz-logo.png',
-          width: 300,
+      Opacity(
+        opacity:0.5,
+        child: Image.asset('assets/images/quiz-logo.png',
+            width: 300,
+        ),
       ),
               const Text(
                   'Caner',
